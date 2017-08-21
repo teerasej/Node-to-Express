@@ -9,7 +9,21 @@ app.get('/', (req, res)=>{
 app.get('/contact-form', (req,res)=>{
     console.log('Got request for contact form');
     res.send('contact form');
-})
+});
+
+app.get('/provinces', (req, res)=>{
+
+    let provinces = [
+        { name: "กรุงเทพมหานคร" },
+        { name: "เชียงใหม่" },
+        { name: "ขอนแก่น" }
+    ];
+
+    res.json(provinces);
+
+});
+
+
 
 app.listen(3000, ()=>{
     console.log('App listening on port 3000!');
