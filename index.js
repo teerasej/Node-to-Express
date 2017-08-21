@@ -6,6 +6,11 @@ app.get('/', (req, res)=>{
     res.send('OK!');
 });
 
+app.get('/contact-form', (req,res)=>{
+    console.log('Got request for contact form');
+    res.send('contact form');
+})
+
 app.listen(3000, ()=>{
     console.log('App listening on port 3000!');
 })
