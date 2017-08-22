@@ -23,6 +23,10 @@ app.get('/provinces', (req, res)=>{
 
 });
 
+app.post('/feedback', (req,res)=>{
+    console.log('Got POST request');
+    res.send('feedback');
+})
 
 
 app.listen(3000, ()=>{
